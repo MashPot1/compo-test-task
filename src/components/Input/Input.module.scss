@@ -1,0 +1,56 @@
+.inputContainer {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e1e5eb;
+  border-radius: 8px;
+  font-family: "GothamProRegular";
+  .input {
+    padding: 20px 16px;
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    &::placeholder {
+      color: #828ead;
+      font-weight: 400;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:disabled {
+      color: #b2bace;
+      background: #f2f5f9;
+      border: 1px solid #f0f3fc;
+    }
+    &.error {
+      color: #ff608a;
+      border: 2px solid #ff608a;
+    }
+  }
+  &:hover {
+    border: 1px solid #828ead;
+  }
+
+  &:focus-within {
+    outline: none;
+    border: 2px solid #1551e5;
+    box-shadow: 0px 0px 6px 0px #bac4e0;
+    .input:focus {
+      border: none;
+    }
+  }
+  .inputIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}

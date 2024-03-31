@@ -1,0 +1,97 @@
+.footer {
+  width: 1600px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 0 24px;
+  .divider {
+    height: 1px;
+    width: 100%;
+    background-color: #e2e4f0;
+  }
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      h5 {
+        font-size: 16px;
+      }
+      svg {
+        margin-right: 8px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+
+        span {
+          color: #77829e;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  table {
+    width: 100%;
+    border-spacing: 0 16px;
+    th {
+      text-align: start;
+      padding-bottom: 8px;
+    }
+    tbody {
+      tr {
+        td {
+          width: 25%;
+        }
+      }
+    }
+  }
+  .copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    .other {
+      display: flex;
+      flex-direction: row;
+      gap: 28px;
+      span {
+        display: flex;
+        gap: 8px;
+        color: #828ead;
+        font-size: 12px;
+        font-weight: 600;
+        &.active {
+          color: #1551e5;
+        }
+      }
+    }
+    .personalData {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      color: #828ead;
+      text-align: center;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 48px;
+      color: #8f9bb3;
+    }
+  }
+}
